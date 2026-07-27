@@ -1,8 +1,29 @@
 aid: fuze
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fuze.png
 name: Fuze
-description: 'Fuze is a company surfaced as a portfolio company of bessemer-venture-partners, insight-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: cloud. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: >-
+  Fuze was a cloud unified-communications-as-a-service (UCaaS) provider offering
+  enterprise cloud voice, video conferencing, team messaging, and contact-center
+  capabilities for the mobile and distributed workforce. Originally surfaced as a
+  portfolio company of Bessemer Venture Partners and Insight Partners, Fuze was
+  acquired by 8x8 in 2022; its website (www.fuze.com) now permanently redirects
+  (HTTP 301) to 8x8.com/fuze and the Fuze product line has been folded into the
+  8x8 platform. No independent Fuze developer portal, API documentation, OpenAPI
+  specification, or public API surface could be found during enrichment. This
+  profile remains in the API Evangelist network as a stub; the only artifact that
+  could be enriched from real signal is a live domain/DNS/TLS security probe of
+  fuze.com.
 url: https://raw.githubusercontent.com/api-evangelist/fuze/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,22 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: 8x8
+x-acquired-year: 2022
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Cloud
+- Unified Communications
+- UCaaS
+- Communications
+- VoIP
+- Video Conferencing
+- Contact Center
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +57,10 @@ maintainers:
 common:
 - type: Website
   url: https://www.fuze.com/
+- type: DomainSecurity
+  url: security/fuze-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
